@@ -1,0 +1,14 @@
+
+message("adding sources for: " ${PROJECT_NAME}_SOURCES)
+
+file (GLOB_RECURSE _SOURCES CONFIGURE_DEPENDS "*.cpp")
+file (GLOB_RECURSE _HEADERS CONFIGURE_DEPENDS "*.h")
+
+set(${PROJECT_NAME}_SOURCES ${_SOURCES} PARENT_SCOPE)
+#${PROJECT_NAME}_HEADERS
+
+message("co do chuja: " ${synth_SOURCES})
+message("co do chuja 2: " ${${PROJECT_NAME}_SOURCES})
+
+file (GLOB_RECURSE ${PROJECT_NAME}_SOURCES CONFIGURE_DEPENDS "openal/*.cpp")
+file (GLOB_RECURSE ${PROJECT_NAME}_HEADERS CONFIGURE_DEPENDS "openal/*.h")

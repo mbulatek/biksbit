@@ -1,3 +1,11 @@
+# Eclipse
+.settings
+.cproject
+.project
+
+# CMake
+_build
+
 # Prerequisites
 *.d
 
